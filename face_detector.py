@@ -1,6 +1,6 @@
 import cv2 as cv
 
-original_image = cv.imread('./jan.jpg')
+original_image = cv.imread('./image.jpg')
 grayscale_image = cv.cvtColor(original_image, cv.COLOR_BGR2GRAY)
 face_cascade = cv.CascadeClassifier('haarcascade_frontalface_alt.xml')
 detected_faces = face_cascade.detectMultiScale(grayscale_image, 1.3)
